@@ -1,0 +1,537 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.fa-times {
+    float: right;
+    font-size: 30px;
+}
+
+.account .login {
+    display: block;
+}
+
+.account .register {
+    display: block;
+}
+
+.page-template {
+    background: white;
+    width: 430px;
+    margin: auto;
+    padding: 40px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 1);
+    position: fixed;
+    margin-top: 450px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+    'Helvetica Neue', sans-serif;
+}
+
+nav {
+    background: white;
+    width: 100%;
+    height: 3.1em;
+    position: fixed;
+}
+
+nav label {
+    font-weight: bold;
+    font-size: large;
+}
+
+nav ul {
+    padding: 14px 100px;
+}
+
+nav ul li, .nav-account {
+    float: right;
+    display: block;
+}
+
+nav ul li a {
+    color: black;
+    padding: 20px;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    transition: .1s;
+}
+
+section .homepage {
+    width: 100%;
+    height: 900px;
+    color: white;
+    padding: 300px 0 0 120px;   
+    display: flex;
+}
+
+section .homepage .page-description {
+    padding: 20px 0 0 120px;
+}
+
+section .homepage .page-description h2{
+    font-size: 100px;
+}
+
+section .homepage .page-description p {
+    width: 500px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+section .homepage .page-description a {
+    color: white;
+    background: transparent;
+    padding: 10px;
+    border-style: solid;
+}
+
+section .homepage .page-description a:hover {
+    background: white;
+    color: black;
+    border-color: white;
+    transition: 10px;
+}
+
+section .homepage .account {
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+section .homepage .account .user-name {
+    font-size: 100px;
+}
+
+section .homepage .account ul {
+    text-align: center;
+    padding-top: 20px;
+}
+
+section .homepage .account ul li a {
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    border: solid;
+}
+
+section .homepage .account ul li a:hover {
+    color: black;
+    border: none;
+    padding: 15px;
+    background: white;
+    transition: 0.5s;
+}
+
+section .homepage .account .user-name {
+    padding: 0 0 10px 30px;
+}
+
+section .homepage .account .name {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+section .homepage .account form {
+    padding-top: 30px;
+}
+
+section .homepage .account .page-title {
+    padding: 0 0 10px 30px;
+}
+
+.account-template {
+    border-radius: 30px;
+    background: white;
+    width: 300px;
+    height: fit-content;
+    color: black;
+    padding: 30px;
+}
+
+.account-template h1{
+    text-align: center;
+}
+
+.account-template p{
+    padding-top: 15px;
+}
+
+.account-template p a{
+    color: black;
+    font-weight: bold;
+}
+
+.account-template .txtBox {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.account-template .submitBtn {
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    background: darkcyan;
+    border-style: solid;
+}
+
+.account-template .submitBtn:hover {
+    color: black;
+    background: transparent;
+    transition: 0.5s;
+}
+
+section .service-design {
+    width: 100%;
+    height: 440px;
+    text-align: center;
+    color: white;
+}
+
+section .service-design h2 {
+    padding-top: 150px;
+    font-size: 40px;
+}
+
+section .service-design button{
+    margin: 10px 2px;
+}
+
+section button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    border-style: solid;
+    cursor: pointer;
+}
+
+section button:hover {
+    background: white;
+    color: black;
+    transition: .5s;
+}
+
+.booking-panel {
+    display: none;
+    background: white;
+    width: 600px;
+    padding: 30px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 1);
+    margin-top: 450px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+}
+
+.booking-panel form {
+    margin-top: 20px;
+}
+
+.booking-panel p {
+    text-align: center;
+}
+
+.booked-panel i {
+    cursor: pointer;
+}
+
+.booking-panel .right {
+    text-align: center;
+}
+
+.booking-panel .right .service_rate {
+    font-weight: bold;
+}
+
+
+.booking-panel h2 {
+    text-align: center;
+}
+
+.booking-panel label {
+    padding-left: 10px;
+}
+
+.booking-panel select {
+    border-style: solid;
+    padding: 5px;
+    text-align: center;
+    width: 90px;
+    margin-top: 5px;
+}
+
+.booking-panel input {
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.booking-panel button {
+    margin-top: 5px;
+    width: 150px;
+    padding: 15px;
+    border-radius: 10px;
+    background: darkcyan;
+    color: white;
+    cursor: pointer;
+}
+
+.booking-panel button:hover {
+    background: white;
+    color: black;
+    transition: 0.5s;
+}
+
+.booked-panel {
+    margin-top: 120px;
+    padding: 30px;
+    width: 700px;
+    position: absolute;
+    text-align: center;
+    display: none;
+}
+
+.booked-panel th{
+    font-size: 20px;
+}
+
+.booking-reviews {
+    display: none;
+}
+
+.review-panel {
+    text-align: center;
+    font-size: 13px;
+}
+
+.review-panel textarea {
+    width: 100%;
+    height: 400px;
+    border-style: solid;
+}
+
+.review-panel select {
+    padding: 10px;
+    border-style: solid;
+}
+
+.review-panel button{
+    background: darkcyan;
+    border-radius: 5px;
+}
+
+.review-panel button:hover {
+    border-color: black;
+    transition: 0.5s;
+}
+
+.book-success {
+    text-align: center;
+}
+
+.fa-check {
+    color: green;
+    font-size: 40px;
+}
+
+.terms-modal {
+    top: -20%;
+    left: -50%;
+    width: 700px;
+    text-align: justify;
+    display: none;
+}
+
+.terms-modal button{
+    background-color: darkcyan;
+}
+
+.terms-modal button:hover {
+    border-color: darkcyan;
+}
+
+
+footer .contact-details{
+    margin: 60px;
+}
+
+footer .contact-details {
+    text-align: center;
+}
+
+footer .contact-title {
+    margin: 30px;
+}
+
+footer .contact-details {
+    text-align: center;
+}
+
+footer .contact-details-container {
+    display: flex;
+    max-width: 700px;
+    margin: auto;
+}
+
+footer .contact-details-person, .customer-support {
+    margin: 15px 20px;
+}
+
+footer .contact-details .title {
+    font-weight: bold;
+}
+
+footer .contact-details-person .number {
+    color: cadetblue;
+}
+
+footer .copyright {
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+
+    section .service-design p {
+        padding: 0 15px;
+    }
+
+    .account-template {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        padding: 30px;
+    }
+
+    section .homepage {
+        display: block;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    section .homepage .page-description{
+        padding: 0;
+        text-align: center;
+    }
+
+    section .homepage .page-description h2{
+        padding-top: 100px;
+        font-size: 60px;
+    }
+
+    section .homepage .page-description p{
+        padding: 1px 35px;
+        width: auto;
+    }
+
+    section .homepage .account {
+        position: unset;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+    }
+
+    section .homepage .account .user-name {
+        text-align: center;
+        font-size: 60px;
+    }
+
+    .account ul {
+        padding-bottom: 200px;
+    }
+    
+    footer .copyright {
+        margin: 20px 0;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .booked-panel {
+        width: 100%;
+        font-size: 13px;
+        position: fixed;
+        top: 30%;
+    }
+
+    .booked-panel th {
+        font-size: 15px;
+    }
+
+    .booked-panel table {
+        table-layout: auto;
+    }
+
+    nav ul {
+        padding: 14.5px;
+    }
+
+    nav label {
+        padding-left: 14px;
+    }
+
+    nav ul li a {
+        padding: 5px;
+    }
+
+    footer .contact-details {
+        margin: 10px;
+    }
+
+    footer .contact-details-container {
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    .booking-panel {
+        width: 100%;
+        height: 100%;
+    }
+
+    .booking-panel form {
+        display: block;
+    }
+
+    .booking-panel input {
+        width: 100%;
+    }
+
+    .terms-modal {
+        top: -50%;
+        left: 50%;
+        width: 0%;
+        width: 100%;
+    }
+    .review-panel textarea {
+        width: 100%;
+        height: 250px;
+        border-style: solid;
+    }
+}
